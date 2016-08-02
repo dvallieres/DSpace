@@ -482,6 +482,8 @@ public class LDAPAuthentication
                         env.put(javax.naming.Context.SECURITY_PRINCIPAL, adminUser);
                         env.put(javax.naming.Context.SECURITY_CREDENTIALS, adminPassword);
                         
+                        // Create initial context
+                        ctx = new InitialLdapContext(env, null);
                     }
                 }
                 else
@@ -489,10 +491,6 @@ public class LDAPAuthentication
                     // Use anonymous authentication
                     env.put(javax.naming.Context.SECURITY_AUTHENTICATION, "none");
                 }
-
-		if(ctx == null){
-                        ctx = new InitialLdapContext(env, null);
-		}
 
                 Attributes matchAttrs = new BasicAttributes(true);
                 matchAttrs.put(new BasicAttribute(ldap_id_field, netid));
