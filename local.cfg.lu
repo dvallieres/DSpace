@@ -19,6 +19,7 @@
 # Any commented out settings in this file are simply ignored. A configuration
 # will only override another configuration if it has the EXACT SAME key/name.
 # For example, including "dspace.dir" in this local.cfg will override the
+
 # default value of "dspace.dir" in the dspace.cfg file.
 # Similarly, including "oai.solr.url" in this local.cfg will override the
 # default value of "oai.solr.url" in the modules/oai.cfg file.
@@ -30,6 +31,10 @@
 ########################
 # LOCAL CUSTOMIZATIONS #
 ########################
+
+include = modules/authentication.cfg
+include = modules/authentication-ip.cfg
+include = modules/authentication-ldap.cfg
 
 
 webui.supported.locales = en, fr
