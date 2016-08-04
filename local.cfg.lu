@@ -50,8 +50,7 @@ webui.supported.locales = en, fr
 dspace.dir=/dspace
 
 # DSpace host name - should match base URL.  Do not include port number
-dspace.hostname = http://142.51.78.19 
-
+dspace.hostname = http://142.51.78.19
 # DSpace base host URL.  Include port number etc.
 dspace.baseUrl = http://142.51.78.19:8080
  
@@ -81,7 +80,7 @@ db.dialect = org.dspace.storage.rdbms.hibernate.postgres.DSpacePostgreSQL82Diale
 
 # Database username and password
 db.username = dspace
-db.password =  
+db.password = 
 
 # Database Schema name
 #    * For Postgres, this is often "public" (default schema)
