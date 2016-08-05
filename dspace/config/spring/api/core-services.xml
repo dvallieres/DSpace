@@ -16,6 +16,11 @@
 			id="org.dspace.core.service.NewsService">
 		<property name="acceptableFilenames">
 			<list>
+		
+				<value>news-side_fr.html</value>
+				<value>news-side_en.html</value>	
+				<value>news-top_fr.html</value>
+				<value>news-top_en.html</value>		
 				<value>news-top.html</value>
 				<value>news-side.html</value>
 			</list>
